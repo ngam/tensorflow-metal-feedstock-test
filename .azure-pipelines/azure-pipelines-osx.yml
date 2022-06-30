@@ -6,6 +6,7 @@ jobs:
 - job: osx
   pool:
     vmImage: macOS-10.15
+    demands: Limit -equals DisAbleParallel
   strategy:
     matrix:
       osx_arm64_:
