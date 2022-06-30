@@ -12,7 +12,8 @@ source:
 build:
   script: {{ PYTHON }} -m pip install -vv {{ name }}/{{ name }}-{{ version }}-cp310-cp310-macosx_11_0_arm64.whl
   number: 0
-  skip: true  # [not osx-arm64]
+  skip: true  # [not osx]
+  skip: true  # [not arm64]
 
 requirements:
   host:
@@ -30,8 +31,8 @@ test:
     - pip check
 
 about:
-  home: https://github.com/keras-team/keras
-  license: Apache-2.0
+  home: https://pypi.org/project/tensorflow-metal/
+  license: MIT
   license_file: LICENSE
   summary: TensorFlow acceleration for Mac GPUs.
 
