@@ -1,0 +1,26 @@
+name: bld
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+
+  blds:
+    runs-on: macos-12
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    
+    steps:
+
+      
+      - name: Checkout 
+        uses: actions/checkout@v3
+
+      - name: python build-locally.py
+        run: |
+              OSX_SDK_DIR=SDKs python3 build-locally.py
