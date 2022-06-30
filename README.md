@@ -1,9 +1,9 @@
 About tensorflow-metal
 ======================
 
-Home: https://github.com/keras-team/keras
+Home: https://pypi.org/project/tensorflow-metal/
 
-Package license: Apache-2.0
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/ngam/tensorflow-metal-feedstock/blob/master/LICENSE.txt)
 
@@ -27,10 +27,10 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>osx_64</td>
+              <td>osx_arm64</td>
               <td>
                 <a href="https://dev.azure.com/ngam/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/ngam/feedstock-builds/_apis/build/status/tensorflow-metal-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                  <img src="https://dev.azure.com/ngam/feedstock-builds/_apis/build/status/tensorflow-metal-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr>
