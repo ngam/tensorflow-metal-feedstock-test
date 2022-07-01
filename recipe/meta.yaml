@@ -8,17 +8,21 @@ package:
 
 source:
   - url: https://files.pythonhosted.org/packages/cd/7f/bbcac864b7ecb164fe8f7e10c29dd2705b165ad82fa182a72f22565e20a2/tensorflow_metal-0.5.0-cp310-cp310-macosx_11_0_x86_64.whl  # [osx and x86 and py==310]
-    sha256: 668a452276a9b7536ec67172e4d4812496136c32cc2b13d663bcc9d7f83de26e  # [osx and arm64 and py==310]
-  - url: https://files.pythonhosted.org/packages/ee/f8/0635e6f43df015cbd397b504259057bc87a43570d6bcf4e8476eba7bf9a0/tensorflow_metal-0.5.0-cp310-cp310-macosx_11_0_arm64.whl  # [osx and arm64 and py==310]
     sha256: 058da93d9e36f81e0c38137fa0ee53509115f099c40da16603ded3ee429e41fc  # [osx and x86 and py==310]
+  - url: https://files.pythonhosted.org/packages/ee/f8/0635e6f43df015cbd397b504259057bc87a43570d6bcf4e8476eba7bf9a0/tensorflow_metal-0.5.0-cp310-cp310-macosx_11_0_arm64.whl  # [osx and arm64 and py==310]
+    sha256: 668a452276a9b7536ec67172e4d4812496136c32cc2b13d663bcc9d7f83de26e  # [osx and arm64 and py==310]
+
   - url: https://files.pythonhosted.org/packages/1d/d6/fd78d61cf5f40d65cf1bff55fcdb96d9a262fa355225a29789ec37221f17/tensorflow_metal-0.5.0-cp39-cp39-macosx_11_0_x86_64.whl  # [osx and x86 and py==39]
-    sha256: 757306e1d7298bcf36f927c5f52a3eb490a6b1a474361b7596735ad71de7a422  # [osx and arm64 and py==39]
-  - url: https://files.pythonhosted.org/packages/41/55/ebd1d260c13e7cd7cc3dce746535e9f43cc13f097917f726868759b0c973/tensorflow_metal-0.5.0-cp39-cp39-macosx_11_0_arm64.whl  # [osx and arm64 and py==39]
     sha256: 957e2e03cf5d96c80d8944934a887d15e2f739e3e146cf515afdce207860c94d  # [osx and x86 and py==39]
+  - url: https://files.pythonhosted.org/packages/41/55/ebd1d260c13e7cd7cc3dce746535e9f43cc13f097917f726868759b0c973/tensorflow_metal-0.5.0-cp39-cp39-macosx_11_0_arm64.whl  # [osx and arm64 and py==39]
+    sha256: 757306e1d7298bcf36f927c5f52a3eb490a6b1a474361b7596735ad71de7a422  # [osx and arm64 and py==39]
+
+
   - url: https://files.pythonhosted.org/packages/9d/a9/2dbdbfab8f2c11a5c6cddd2f63fc9c33adec09fdb8796c772727db26af39/tensorflow_metal-0.5.0-cp38-cp38-macosx_11_0_x86_64.whl  # [osx and x86 and py==38]
-    sha256: 14fc9ccb897e0c403b45c6c438ad4001b652df9e6760f6516677ce36a33fe978  # [osx and arm64 and py==8]
-  - url: https://files.pythonhosted.org/packages/ed/e2/aaa7e33186e0ed91f988b99d29bde55f159c86fc929630aab7970dabb297/tensorflow_metal-0.5.0-cp38-cp38-macosx_11_0_arm64.whl  # [osx and arm64 and py==38]
     sha256: df24caa771506e4303398075666e2b27cc8eb74759aa624a7f443a9e380fb0b2  # [osx and x86 and py==38]
+  - url: https://files.pythonhosted.org/packages/ed/e2/aaa7e33186e0ed91f988b99d29bde55f159c86fc929630aab7970dabb297/tensorflow_metal-0.5.0-cp38-cp38-macosx_11_0_arm64.whl  # [osx and arm64 and py==38]
+
+    sha256: 14fc9ccb897e0c403b45c6c438ad4001b652df9e6760f6516677ce36a33fe978  # [osx and arm64 and py==8]
 
 build:
   script: {{ PYTHON }} -m pip install -vv {{ name_ }}-{{ version }}-cp310-cp310-macosx_11_0_arm64.whl  # [osx and arm64 and py==310]
